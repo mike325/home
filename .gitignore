@@ -1,5 +1,11 @@
 # Access
-micropython/access.py
+access.*
+
+.pio
+.clang_complete
+.gcc-flags.json
+
+# Binaries
 *.bin
 
 # Byte-compiled / optimized / DLL files
