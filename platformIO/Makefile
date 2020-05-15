@@ -1,29 +1,31 @@
 # Uncomment lines below if you have problems with $PATH
-#SHELL := /bin/bash
-#PATH := /usr/local/bin:$(PATH)
+# SHELL := C:/windows/System32/WindowsPowerShell/v1.0/powershell.EXE
+# SHELL := /bin/bash
+# PATH := /usr/local/bin:$(PATH)
 
-all: build upload monitor
-
-monitor:
-	platformio device monitor
-
-db:
-	platformio run -t compiledb
+all: build db upload monitor
 
 build:
-	platformio -f -c vim run
+	platformio -c vim run
+
+monitor:
+	platformio -c vim device monitor
+
+db:
+	platformio -c vim run --target compiledb
+# 	cp .pio/build/nodemcuv2/compile_commands.json .
 
 upload:
-	platformio -f -c vim run --target upload
+	platformio -c vim run --target upload
 
 clean:
-	platformio -f -c vim run --target clean
+	platformio -c vim run --target clean
 
 program:
-	platformio -f -c vim run --target program
+	platformio -c vim run --target program
 
 uploadfs:
-	platformio -f -c vim run --target uploadfs
+	platformio -c vim run --target uploadfs
 
 update:
-	platformio -f -c vim update
+	platformio -c vim update

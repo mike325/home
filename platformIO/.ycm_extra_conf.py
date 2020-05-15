@@ -28,12 +28,12 @@ PlatformioAutogen = ".pio"
 # and slightly increase startup time (while crawling the lib
 # dir for header files). This will however allow you to
 # complete for header files you haven't included yet.
-PlatformioArduinoLibs = "~/.platformio/packages/framework-arduinoavr/libraries/"
+PlatformioArduinoLibs = "~/.platformio/packages/framework-arduinoespressif8266/libraries/"
 
 # Platformio Arduino Core
 # This links to the Platformio Arduino Cores. This provides
 # the core libs, such as Arduino.h and HardwareSerial.h
-PlatformioArduinoCore = "~/.platformio/packages/framework-arduinoavr/cores/arduino/"
+PlatformioArduinoCore = "~/.platformio/packages/framework-arduinoespressif8266/cores/esp8266/"
 
 # Platformio Arduino Std Libs
 # Arduino Std libs from .platformio packages. Provides stdlib.h and such.
